@@ -1,0 +1,205 @@
+.container-deteils{
+    @include container();
+    .img{
+        img{
+            @include img();
+        }
+    }
+    .menu-deteils{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        ul{
+            display: flex;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    .shouhin{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 50%;
+            height: 100%;
+        }
+        .aside{
+            // margin-left: 10%;
+            p{
+                line-height: 30px;
+            }
+            .sizeBox{
+                // width: 500px;
+                .pos{
+                    display: flex;
+                    justify-content: space-between;
+                    .howtopay{
+                        display: flex;
+                        margin-right: 30px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        .size{
+                            display: flex;
+                        }
+                    }
+                    .cartBox{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        .cart{
+                            background-color: rgb(82, 82, 245);
+                            color: white;
+                            padding: 5px 20px;
+                            border-radius: 20px;
+                            // margin-left: 30px;
+                        }
+                        .cart:hover{
+                            background-color: rgb(41, 41, 245);
+                        }
+                    }
+                }
+            }
+        }
+            .explain{
+                width: 50%;
+                height: 60%;
+                display: none;
+                z-index: 2;
+                right: 0;
+                left: 25%;
+                bottom: -532px;
+                position: absolute;
+                background-color: white;
+                span{
+                    // display: block;
+                    cursor: pointer;
+                    font-size: 20px;
+                    position: relative;
+                    left: 1%;
+                    bottom: -2px;
+                }
+                .money{
+                    display: flex;
+                    justify-content: space-around;
+                    // align-items: center;
+                    border-top: 2px solid gray;
+                    border-bottom: 2px solid gray;
+                    p{
+                        margin-right: -5%;
+                    }
+                }
+                .fa-times-circle{
+                    position: relative;
+                    top: 73px;
+                    right: -3%;
+                }
+                .user-pic{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-size: 20px;
+                    border-bottom: 2px solid gray;
+                    padding-bottom: 5px;
+                    img{
+                        height: 20%;
+                        width: 20%;
+                    }
+                }
+            }
+    }
+    .item{
+        margin-top: 100px;
+        font-weight: bold;
+    }
+    .others{
+        display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-around;
+        a{
+            // width: 100%;
+            text-align: center;
+            height: 300px;
+            // width: 30%;
+            margin: 10px;
+
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+    }
+    #bg{
+        display: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    a{
+        padding: 5px 20px;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: rgb(89, 89, 89);
+    }
+}
+
+
+@media screen and(max-width:500px){
+    .container-deteils{
+        width: 90%;
+        .img{
+            img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .shouhin{
+            img{
+                height: 40vh;
+            }
+            .aside{
+                margin-left:30px;
+                .sizeBox{
+                    .pos{
+                        .howtopay{
+                            .size{
+                                display: block;
+                                p{
+                                    width: 75px;
+                                }
+                            }
+                        }
+                        .cartBox{
+                            .cart{
+                                padding: 5px 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .others{
+            a{
+                img{
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
