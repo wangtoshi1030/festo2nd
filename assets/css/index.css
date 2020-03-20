@@ -466,6 +466,9 @@ Twitter: @rich_clark
   background-color: black;
   color: white; }
 
+.container p {
+  text-align: center; }
+
 .up {
   display: -webkit-box;
   display: flex;
